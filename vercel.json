@@ -1,0 +1,5 @@
+{
+  "buildCommand": "python3 build-template.py config/client-config.json",
+  "outputDirectory": "output",
+  "installCommand": "npm install"
+}
