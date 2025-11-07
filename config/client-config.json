@@ -7,39 +7,39 @@
     "phone": "+212661269626"
   },
   "branding": {
-    "primaryColor": "#1a1a2e",
-    "secondaryColor": "#16213e",
-    "accentColor": "#e94560",
-    "textColor": "#f5f5f5",
-    "backgroundColor": "#0f0f1e",
-    "buttonColor": "#e94560",
-    "buttonTextColor": "#ffffff"
+    "primaryColor": "#000000",
+    "secondaryColor": "#F2EEE6",
+    "accentColor": "#8B4513",
+    "textColor": "#EDE8E1",
+    "backgroundColor": "#000000",
+    "buttonColor": "#8B4513",
+    "buttonTextColor": "#FFFFFF"
   },
   "content": {
-    "heroTitle": "Scale to $100K+/Month with 1-on-1 Dropshipping Coaching",
-    "heroSubtitle": "Work Directly with Simo Every Single Day via WhatsApp",
-    "heroDescription": "The same proven system that took complete beginners to $300K+/month in 9 months. Daily coaching, $1M store template, and lifetime network access included.",
-    "missionTitle": "Transparent. Proven. Different.",
-    "missionText": "With 7-8 years in dropshipping and currently doing $300K+/month in sales, Simo built his reputation on complete transparency. Everything is shown publicly on YouTube - no secrets, no hidden tactics. Just proven strategies that actually work.",
-    "aboutTitle": "Why Students Choose Simo",
-    "aboutText": "Unlike other coaching programs with weekly group calls, you get direct 1-on-1 access to Simo every single day via WhatsApp. You're not just buying information - you're getting the exact $1M store template Simo used, plus lifetime access to his network of payment processors, fulfillment agents, and ad specialists.",
+    "heroTitle": "THE ONLY DROPSHIPPING PROGRAM WHERE I WORK WITH YOU EVERY SINGLE DAY FOR 12 MONTHS",
+    "heroSubtitle": "No weekly calls. No group coaching. Just you, me, and WhatsApp — building your store from $0 to $100K+/month.",
+    "heroDescription": "7 years in dropshipping. $300K+/month in personal sales. Everything shown publicly on YouTube. Students hitting $100K-$300K/month in 9 months.",
+    "missionTitle": "Most Coaches Sell You Information And Disappear",
+    "missionText": "They charge $10,000 for group coaching. You get 1 hour per week. That's not how real businesses are built. I work with you every single day. Product selection? I approve it. Ad creatives? We build them together. Store breaks? I fix it. You're not buying information. You're buying 365 days of direct access to someone doing $300K+/month.",
+    "aboutTitle": "Why Your Other Attempts Failed (And Why This Is Different)",
+    "aboutText": "Most dropshipping programs teach strategy in a vacuum. They don't show you the actual implementation. They don't handle the problems that come up. I show everything live on YouTube. My stores. My ads. My results. My failures. Because if I can do it publicly, you can do it privately behind closed doors with even better results.",
     "pillars": [
       {
-        "title": "Daily 1-on-1 Support",
-        "description": "WhatsApp communication every single day. No waiting weeks for group calls - get real-time guidance whenever you need it."
+        "title": "365 Days Of Direct Access",
+        "description": "Not weekly calls. Not async replies. Daily WhatsApp communication with me personally. Product decisions? I approve them. Problems? I fix them same day. This is white-glove, done-with-you coaching."
       },
       {
-        "title": "Proven $1M Template",
-        "description": "The exact Shopify store theme that generated over $1M in sales. Setup takes 30 minutes to 1 hour with full customization included."
+        "title": "The $1M Proven Store Template",
+        "description": "The exact Shopify theme I used to do $1M+ in sales. You get lifetime access. Launch in 30 minutes. Every element tested and proven. Skip the years of trial-and-error."
       },
       {
-        "title": "Lifetime Network Access",
-        "description": "Payment processors, 5 trained fulfillment agents in China, Facebook agency accounts, and ad specialists - all contacts remain yours forever."
+        "title": "My Entire Rolodex (Forever)",
+        "description": "5 trained fulfillment agents in China. Payment processor contacts who fix bans. Facebook agency reps who set up accounts in 3 days. Ad specialists. Company formation contacts across 3 countries. Once you're in, these contacts are yours for life."
       }
     ],
-    "ctaTitle": "Ready to Build Your $100K+/Month Dropshipping Business?",
-    "ctaSubtitle": "Join Simo's proven coaching program. $2,000/month or $6,000 for 3 months upfront.",
-    "ctaButtonText": "Apply for 1-on-1 Coaching",
+    "ctaTitle": "Only 2 Spots Left This Month",
+    "ctaSubtitle": "$2,000/month for daily access. Or $6,000 for 3 months upfront. Apply below if you're serious.",
+    "ctaButtonText": "Apply Now - Limited Spots",
     "ctaButtonUrl": "#application-form"
   },
   "media": {
