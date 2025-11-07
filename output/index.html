@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simo Bencheikh - 1-on-1 Dropshipping Coaching | Ecom with Simo</title>
+    <meta name="description" content="Join Simo's proven dropshipping coaching program with daily WhatsApp support, $1M store template, and lifetime network access. Students scaling to $300K+/month.">
+    <meta name="keywords" content="dropshipping coaching, fashion dropshipping, facebook ads dropshipping, ecom with simo, simo bencheikh, dropshipping mentorship, 1-on-1 coaching">
+    <meta name="author" content="Simo Bencheikh">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Simo Bencheikh - 1-on-1 Dropshipping Coaching | Ecom with Simo">
+    <meta property="og:description" content="Join Simo's proven dropshipping coaching program with daily WhatsApp support, $1M store template, and lifetime network access. Students scaling to $300K+/month.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta property="og:url" content="https://www.youtube.com/@EcomWithSims">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Responsive image sizing for testimonials */
+        .result-img { 
+            max-height: 520px; 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: contain;
+            background-color: #f8f8f8;
+        }
+        
+        @media (max-width: 640px) { 
+            .result-img { 
+                max-height: 420px; 
+            } 
+        }
+
+        /* Prevent layout jumps and ensure consistent sizing */
+        .testimonial-picture-card {
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Ensure images load smoothly */
+        .result-img {
+            transition: opacity 0.3s ease;
+        }
+
+        .result-img[loading] {
+            opacity: 0.8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #f5f5f5;
+            background-color: #0f0f1e;
+        }
+
+        /* HERO VIDEO WRAPPER */
+        .hero-video{
+          width:100%;
+          max-width: 720px;
+          margin: 0 auto;
+          border-radius: 12px;
+          overflow: hidden;
+          line-height: 0;
+        }
+        .hero-video #vidalytics_embed_1nEhDb05u9Um53a9{
+          position: relative !important;
+          width: 100% !important;
+          aspect-ratio: 16/9;
+          padding: 0 !important;
+        }
+
+        /* Force the injected iframe to fill the box */
+        .hero-video iframe,
+        .hero-video video,
+        .hero-video .vidalytics-player,
+        .hero-video .vidalytics_container{
+          position: absolute !important;
+          inset: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          margin: 0 !important;
+          display: block !important;
+          border: 0 !important;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px){
+          .hero-cta { margin-top: 16px !important; }
+          .mission-section { display: none !important; }
+          .about-section { display: none !important; }
+          .pillars-section { display: none !important; }
+        }
+
+        /* Testimonials Gallery CSS */
+        .results-grid{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+        @media (min-width: 640px){
+          .results-grid{ grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        }
+        @media (min-width: 1024px){
+          .results-grid{ grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        }
+
+        .card{
+          background: #f6f7f8;
+          border-radius: 10px;
+          padding: 8px;
+          box-shadow: 0 1px 3px rgba(0,0,0,.06);
+        }
+
+        .result-img{
+          display:block;
+          width:100%;
+          height:auto;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+
+        .results img, .results figure, .results picture{ margin:0 !important; }
+        
+        /* Mobile CTA Cards */
+        .mobile-cta-card {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-cta-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 1rem;
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .mobile-cta-card .mobile-cta-button {
+                width: 100%;
+                max-width: 300px;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background-color: #1a1a2e;
+                color: #f5f5f5;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mobile-cta-card .mobile-cta-button:hover {
+                background-color: #e94560;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            background-color: #0f0f1e;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 400;
+            color: #f5f5f5;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-subtitle {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 700;
+            color: #e94560;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: #f5f5f5;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .hero-video-container {
+            margin: 3rem 0;
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            background-color: #e94560;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #e94560;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* MISSION SECTION */
+        .mission-section {
+            padding: 4rem 2rem;
+            background-color: #16213e;
+            color: #1a1a2e;
+        }
+
+        .mission-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .mission-title {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a1a2e;
+        }
+
+        .mission-text {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            line-height: 1.7;
+            color: #1a1a2e;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            padding: 4rem 2rem;
+            background-color: #0f0f1e;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-title {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #f5f5f5;
+            margin-bottom: 2rem;
+        }
+
+        .about-text {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: #f5f5f5;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+        }
+
+        /* PILLARS SECTION */
+        .pillars-section {
+            padding: 4rem 2rem;
+            background-color: #16213e;
+        }
+
+        .pillars-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pillars-title {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1a1a2e;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar {
+            background-color: #1a1a2e;
+            color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pillar h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+
+        .pillar p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #f5f5f5;
+        }
+
+        /* TESTIMONIALS SECTION */
+        .student-testimonials-section {
+            padding: 4rem 2rem;
+            background-color: #0f0f1e;
+        }
+
+        .testimonials-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-title {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #f5f5f5;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-picture-card {
+            background-color: #16213e;
+            border-radius: 15px;
+            padding: 1rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-picture-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-info {
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .testimonial-info h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-info .result {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-info .description {
+            font-size: 0.9rem;
+            color: #1a1a2e;
+            line-height: 1.5;
+        }
+
+        /* FINAL CTA SECTION */
+        .final-cta-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #1a1a2e 0%, #e94560 100%);
+            text-align: center;
+        }
+
+        .final-cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .final-cta-title {
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #f5f5f5;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: #f5f5f5;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* FORM STYLES */
+        .application-form {
+            background-color: #16213e;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 1rem;
+            }
+            
+            .mission-section,
+            .about-section,
+            .pillars-section {
+                padding: 2rem 1rem;
+            }
+            
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Scale to $100K+/Month with 1-on-1 Dropshipping Coaching</h1>
+            <h2 class="hero-subtitle">Work Directly with Simo Every Single Day via WhatsApp</h2>
+            <p class="hero-description">The same proven system that took complete beginners to $300K+/month in 9 months. Daily coaching, $1M store template, and lifetime network access included.</p>
+            
+            <div class="hero-video-container">
+                <div class="hero-video">
+                    <div id="vidalytics_embed_1nEhDb05u9Um53a9"></div>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#application-form" class="cta-button">Apply for 1-on-1 Coaching</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section class="mission-section">
+        <div class="mission-content">
+            <h2 class="mission-title">Transparent. Proven. Different.</h2>
+            <p class="mission-text">With 7-8 years in dropshipping and currently doing $300K+/month in sales, Simo built his reputation on complete transparency. Everything is shown publicly on YouTube - no secrets, no hidden tactics. Just proven strategies that actually work.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2 class="about-title">Why Students Choose Simo</h2>
+            <p class="about-text">Unlike other coaching programs with weekly group calls, you get direct 1-on-1 access to Simo every single day via WhatsApp. You're not just buying information - you're getting the exact $1M store template Simo used, plus lifetime access to his network of payment processors, fulfillment agents, and ad specialists.</p>
+        </div>
+    </section>
+
+    <!-- PILLARS SECTION -->
+    <section class="pillars-section">
+        <div class="pillars-content">
+            <h2 class="pillars-title">Why Choose Us</h2>
+            <div class="pillars-grid">
+                
+                <div class="pillar">
+                    <h3>Daily 1-on-1 Support</h3>
+                    <p>WhatsApp communication every single day. No waiting weeks for group calls - get real-time guidance whenever you need it.</p>
+                </div>
+                <div class="pillar">
+                    <h3>Proven $1M Template</h3>
+                    <p>The exact Shopify store theme that generated over $1M in sales. Setup takes 30 minutes to 1 hour with full customization included.</p>
+                </div>
+                <div class="pillar">
+                    <h3>Lifetime Network Access</h3>
+                    <p>Payment processors, 5 trained fulfillment agents in China, Facebook agency accounts, and ad specialists - all contacts remain yours forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="results student-testimonials-section">
+        <div class="testimonials-content">
+            <h2 class="testimonials-title">Success Stories</h2>
+            <div class="results-grid">
+                
+                <div class="testimonial-picture-card">
+                    <img src="assets/testimonial-jackson.jpg" alt="Jackson (Australia)" class="result-img" loading="lazy">
+                    <div class="testimonial-info">
+                        <h4>Jackson (Australia)</h4>
+                        <p class="result">$300K+/Month in 9 Months</p>
+                        <p class="description">Complete beginner who lost $2K before joining. After 2 months with Simo, hit $100K/month. Now at $300K+/month and bought a second house with dropshipping profits.</p>
+                    </div>
+                </div>
+                <div class="testimonial-picture-card">
+                    <img src="assets/testimonial-richik.jpg" alt="Richik (India)" class="result-img" loading="lazy">
+                    <div class="testimonial-info">
+                        <h4>Richik (India)</h4>
+                        <p class="result">$250K+/Month After 5-7 Years of Failures</p>
+                        <p class="description">Tried dropshipping for 5-7 years with zero wins. Joined Simo in June, and after initial learning phase, now doing $250K+/month with $30-50K net profit. Travels with family in luxury.</p>
+                    </div>
+                </div>
+                <div class="testimonial-picture-card">
+                    <img src="assets/testimonial-student.jpg" alt="Average Student Timeline" class="result-img" loading="lazy">
+                    <div class="testimonial-info">
+                        <h4>Average Student Timeline</h4>
+                        <p class="result">First Sale in 1-4 Days</p>
+                        <p class="description">Most students get their first sale within 1-4 days and reach profitability in 45-60 days on average with Simo's daily guidance and proven system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section">
+        <div class="final-cta-content">
+            <h2 class="final-cta-title">Ready to Build Your $100K+/Month Dropshipping Business?</h2>
+            <p class="final-cta-subtitle">Join Simo's proven coaching program. $2,000/month or $6,000 for 3 months upfront.</p>
+            
+            <!-- APPLICATION FORM -->
+            
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="application-form" id="application-form">
+                
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+1 (555) 123-4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience_level">Dropshipping Experience Level *</label>
+                        <select name="experience_level" id="experience_level" required>
+                            <option value="">Select Dropshipping Experience Level</option>
+                            <option value="complete_beginner">Complete Beginner (Never tried dropshipping)</option><option value="some_experience">Some Experience (Tested but no consistent wins)</option><option value="multiple_failed_stores">Multiple Failed Stores (Need proven system)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ad_budget">Monthly Ad Budget Available *</label>
+                        <select name="ad_budget" id="ad_budget" required>
+                            <option value="">Select Monthly Ad Budget Available</option>
+                            <option value="500-1000">$500 - $1,000</option><option value="1000-2000">$1,000 - $2,000</option><option value="2000-5000">$2,000 - $5,000</option><option value="5000+">$5,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="youtube_familiar">Are you familiar with Simo's YouTube content? *</label>
+                        <select name="youtube_familiar" id="youtube_familiar" required>
+                            <option value="">Select Are you familiar with Simo's YouTube content?</option>
+                            <option value="yes_subscriber">Yes - I'm a subscriber</option><option value="yes_watched">Yes - I've watched some videos</option><option value="no">No - Found this through other means</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="goals">What's your main goal with dropshipping? *</label>
+                        <textarea name="goals" id="goals" placeholder="E.g., Leave my 9-5 job, Build location-independent income, Scale to $100K+/month..." rows="4" required></textarea>
+                    </div>
+                <button type="submit" class="cta-button">Apply for 1-on-1 Coaching</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- MOBILE CTA CARD -->
+    <div class="mobile-cta-card">
+        <a href="#application-form" class="mobile-cta-button">Apply for 1-on-1 Coaching</a>
+    </div>
+
+    <!-- Vidalytics Video Script -->
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://vidalytics.com/embed/1nEhDb05u9Um53a9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'vidalytics-js'));
+    </script>
+
+    <!-- Analytics and Tracking -->
+    <script>
+        // Add your analytics tracking code here
+        console.log('Funnel loaded for Simo Bencheikh');
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+  "client": {
+    "name": "Simo Bencheikh",
+    "businessName": "Ecom with Simo",
+    "website": "https://www.youtube.com/@EcomWithSims",
+    "email": "simobencheikh1993@gmail.com",
+    "phone": "+212661269626"
+  },
+  "branding": {
+    "primaryColor": "#1a1a2e",
+    "secondaryColor": "#16213e",
+    "accentColor": "#e94560",
+    "textColor": "#f5f5f5",
+    "backgroundColor": "#0f0f1e",
+    "buttonColor": "#e94560",
+    "buttonTextColor": "#ffffff"
+  },
+  "content": {
+    "heroTitle": "Scale to $100K+/Month with 1-on-1 Dropshipping Coaching",
+    "heroSubtitle": "Work Directly with Simo Every Single Day via WhatsApp",
+    "heroDescription": "The same proven system that took complete beginners to $300K+/month in 9 months. Daily coaching, $1M store template, and lifetime network access included.",
+    "missionTitle": "Transparent. Proven. Different.",
+    "missionText": "With 7-8 years in dropshipping and currently doing $300K+/month in sales, Simo built his reputation on complete transparency. Everything is shown publicly on YouTube - no secrets, no hidden tactics. Just proven strategies that actually work.",
+    "aboutTitle": "Why Students Choose Simo",
+    "aboutText": "Unlike other coaching programs with weekly group calls, you get direct 1-on-1 access to Simo every single day via WhatsApp. You're not just buying information - you're getting the exact $1M store template Simo used, plus lifetime access to his network of payment processors, fulfillment agents, and ad specialists.",
+    "pillars": [
+      {
+        "title": "Daily 1-on-1 Support",
+        "description": "WhatsApp communication every single day. No waiting weeks for group calls - get real-time guidance whenever you need it."
+      },
+      {
+        "title": "Proven $1M Template",
+        "description": "The exact Shopify store theme that generated over $1M in sales. Setup takes 30 minutes to 1 hour with full customization included."
+      },
+      {
+        "title": "Lifetime Network Access",
+        "description": "Payment processors, 5 trained fulfillment agents in China, Facebook agency accounts, and ad specialists - all contacts remain yours forever."
+      }
+    ],
+    "ctaTitle": "Ready to Build Your $100K+/Month Dropshipping Business?",
+    "ctaSubtitle": "Join Simo's proven coaching program. $2,000/month or $6,000 for 3 months upfront.",
+    "ctaButtonText": "Apply for 1-on-1 Coaching",
+    "ctaButtonUrl": "#application-form"
+  },
+  "media": {
+    "heroVideo": {
+      "type": "vidalytics",
+      "embedId": "1nEhDb05u9Um53a9",
+      "fallbackImage": "assets/hero-video-fallback.jpg"
+    },
+    "testimonials": [
+      {
+        "image": "assets/testimonial-jackson.jpg",
+        "name": "Jackson (Australia)",
+        "result": "$300K+/Month in 9 Months",
+        "description": "Complete beginner who lost $2K before joining. After 2 months with Simo, hit $100K/month. Now at $300K+/month and bought a second house with dropshipping profits."
+      },
+      {
+        "image": "assets/testimonial-richik.jpg",
+        "name": "Richik (India)",
+        "result": "$250K+/Month After 5-7 Years of Failures",
+        "description": "Tried dropshipping for 5-7 years with zero wins. Joined Simo in June, and after initial learning phase, now doing $250K+/month with $30-50K net profit. Travels with family in luxury."
+      },
+      {
+        "image": "assets/testimonial-student.jpg",
+        "name": "Average Student Timeline",
+        "result": "First Sale in 1-4 Days",
+        "description": "Most students get their first sale within 1-4 days and reach profitability in 45-60 days on average with Simo's daily guidance and proven system."
+      }
+    ],
+    "logo": "assets/logo.png",
+    "favicon": "assets/favicon.ico"
+  },
+  "forms": {
+    "applicationForm": {
+      "action": "https://formspree.io/f/your-form-id",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "label": "Full Name",
+          "required": true,
+          "placeholder": "Enter your full name"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email Address",
+          "required": true,
+          "placeholder": "your.email@example.com"
+        },
+        {
+          "name": "phone",
+          "type": "tel",
+          "label": "Phone Number",
+          "required": true,
+          "placeholder": "+1 (555) 123-4567"
+        },
+        {
+          "name": "experience_level",
+          "type": "select",
+          "label": "Dropshipping Experience Level",
+          "required": true,
+          "options": [
+            {"value": "complete_beginner", "text": "Complete Beginner (Never tried dropshipping)"},
+            {"value": "some_experience", "text": "Some Experience (Tested but no consistent wins)"},
+            {"value": "multiple_failed_stores", "text": "Multiple Failed Stores (Need proven system)"}
+          ]
+        },
+        {
+          "name": "ad_budget",
+          "type": "select",
+          "label": "Monthly Ad Budget Available",
+          "required": true,
+          "options": [
+            {"value": "500-1000", "text": "$500 - $1,000"},
+            {"value": "1000-2000", "text": "$1,000 - $2,000"},
+            {"value": "2000-5000", "text": "$2,000 - $5,000"},
+            {"value": "5000+", "text": "$5,000+"}
+          ]
+        },
+        {
+          "name": "youtube_familiar",
+          "type": "select",
+          "label": "Are you familiar with Simo's YouTube content?",
+          "required": true,
+          "options": [
+            {"value": "yes_subscriber", "text": "Yes - I'm a subscriber"},
+            {"value": "yes_watched", "text": "Yes - I've watched some videos"},
+            {"value": "no", "text": "No - Found this through other means"}
+          ]
+        },
+        {
+          "name": "goals",
+          "type": "textarea",
+          "label": "What's your main goal with dropshipping?",
+          "required": true,
+          "placeholder": "E.g., Leave my 9-5 job, Build location-independent income, Scale to $100K+/month...",
+          "rows": 4
+        }
+      ]
+    }
+  },
+  "pages": {
+    "education": {
+      "title": "What's Included in Your Coaching",
+      "sections": [
+        {
+          "title": "Complete Store Setup & Strategy",
+          "content": "Get the proven $1M store template, professional brand naming, logo creation, and market selection with momentum analysis. Everything you need to launch in 30 minutes to 1 hour."
+        },
+        {
+          "title": "Daily 1-on-1 Coaching via WhatsApp",
+          "content": "Direct communication with Simo all day, every day. No waiting for weekly calls - get real-time guidance on strategy, product selection, ad management, and every business decision."
+        },
+        {
+          "title": "Product Research & Ad Training",
+          "content": "Master Afterlib, Facebook Ad Library, AliExpress, and Temu sourcing. Every product gets personal approval from Simo before you launch."
+        },
+        {
+          "title": "Free Facebook Agency Account",
+          "content": "Save $250/month + 3-5% ad spend with free agency account setup. Handles restricted/suspended accounts through Simo's personal contacts."
+        },
+        {
+          "title": "Trained Fulfillment Network",
+          "content": "Access to 5 personally trained fulfillment agents in China who handle branding, quality control, and sizing. You only pay product cost."
+        },
+        {
+          "title": "Lifetime Contacts & Support",
+          "content": "Payment processor contacts, multiple company setup options (US/UK/Hong Kong), agency partnerships, and ad specialists - all remain accessible after coaching ends."
+        }
+      ]
+    },
+    "confirmation": {
+      "title": "Application Received!",
+      "subtitle": "Thank you for your interest in Simo's coaching program",
+      "message": "We've received your application and will review it within 24 hours. If approved, you'll receive a WhatsApp message to schedule your onboarding call.",
+      "nextSteps": [
+        "Check your email (including spam) for confirmation",
+        "Simo will personally review your application",
+        "If approved, expect WhatsApp contact within 24 hours",
+        "Prepare questions for your onboarding call"
+      ]
+    }
+  },
+  "seo": {
+    "title": "Simo Bencheikh - 1-on-1 Dropshipping Coaching | Ecom with Simo",
+    "description": "Join Simo's proven dropshipping coaching program with daily WhatsApp support, $1M store template, and lifetime network access. Students scaling to $300K+/month.",
+    "keywords": "dropshipping coaching, fashion dropshipping, facebook ads dropshipping, ecom with simo, simo bencheikh, dropshipping mentorship, 1-on-1 coaching",
+    "ogImage": "assets/og-image.jpg"
+  }
+}
