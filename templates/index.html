@@ -194,14 +194,13 @@
         }
 
         .hero-title {
-            font-family: 'Bebas Neue', cursive;
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            font-weight: 400;
+            font-family: 'Merriweather', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
             color: {{branding.textColor}};
-            margin-bottom: 1rem;
-            line-height: 1.1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            letter-spacing: 1px;
         }
 
         .hero-subtitle {
@@ -231,23 +230,24 @@
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
+            padding: 1.25rem 4rem;
+            font-size: 1.4rem;
             font-weight: 600;
             background-color: {{branding.buttonColor}};
             color: {{branding.buttonTextColor}};
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
             border: none;
             cursor: pointer;
+            letter-spacing: 0.5px;
         }
 
         .cta-button:hover {
-            background-color: {{branding.accentColor}};
+            background-color: #A0522D;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
         }
 
         /* MISSION SECTION */
@@ -273,8 +273,18 @@
 
         .mission-text {
             font-size: clamp(1rem, 2.5vw, 1.2rem);
-            line-height: 1.7;
+            line-height: 1.8;
             color: {{branding.primaryColor}};
+        }
+
+        /* Highlight style for key phrases */
+        .highlight {
+            background-color: {{branding.accentColor}};
+            color: {{branding.secondaryColor}};
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            display: inline-block;
         }
 
         /* ABOUT SECTION */
@@ -333,23 +343,31 @@
         .pillar {
             background-color: {{branding.primaryColor}};
             color: {{branding.textColor}};
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .pillar:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            border-color: {{branding.accentColor}};
         }
 
         .pillar h3 {
             font-family: 'Merriweather', serif;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: {{branding.accentColor}};
         }
 
         .pillar p {
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 1.05rem;
+            line-height: 1.7;
             color: {{branding.textColor}};
         }
 
@@ -376,17 +394,20 @@
         .testimonial-picture-card {
             background-color: {{branding.secondaryColor}};
             border-radius: 15px;
-            padding: 1rem;
+            padding: 1.2rem;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .testimonial-picture-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            border-color: {{branding.accentColor}};
         }
 
         .testimonial-info {
-            padding: 1rem 0;
+            padding: 1.2rem 0;
             text-align: center;
         }
 
@@ -399,16 +420,17 @@
         }
 
         .testimonial-info .result {
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-weight: 600;
             color: {{branding.accentColor}};
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            display: block;
         }
 
         .testimonial-info .description {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: {{branding.primaryColor}};
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         /* FINAL CTA SECTION */
