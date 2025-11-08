@@ -594,43 +594,9 @@
             border-radius: var(--radius-lg);
         }
 
-        /* Play button badge */
+        /* Play button badge - hidden */
         .youtube-play-badge {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.75rem;
-            z-index: 3;
-            opacity: 0.9;
-            transition: all 0.3s ease;
-            color: {{branding.accentColor}};
-            cursor: pointer;
-        }
-
-        .youtube-embed-container:hover .youtube-play-badge {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-
-        .youtube-play-badge svg {
-            transition: all 0.3s ease;
-        }
-
-        .youtube-play-badge:hover svg {
-            transform: scale(1.2);
-        }
-
-        .youtube-play-badge span {
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-align: center;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            opacity: 0.8;
+            display: none;
         }
 
         .youtube-embed-container iframe {
@@ -843,13 +809,6 @@
             <div class="youtube-outer-wrapper">
                 <div class="youtube-embed-container">
                     <div class="youtube-overlay"></div>
-                    <div class="youtube-play-badge">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none"/>
-                            <polygon points="24,18 24,42 42,30" fill="currentColor"/>
-                        </svg>
-                        <span>Watch Student Results</span>
-                    </div>
                     <iframe
                         width="100%"
                         height="500"
