@@ -682,6 +682,81 @@
             line-height: 1.6;
         }
 
+        /* TESTIMONIAL SCREENSHOTS GALLERY */
+        .testimonial-screenshots-section {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(139, 69, 19, 0.2);
+        }
+
+        .screenshots-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .screenshot-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 69, 19, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            aspect-ratio: 3 / 4;
+            cursor: pointer;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .screenshot-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 69, 19, 0.5);
+            box-shadow: 0 15px 40px rgba(139, 69, 19, 0.2), inset 0 0 0 1px rgba(139, 69, 19, 0.3);
+        }
+
+        .screenshot-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 1024px) {
+            .screenshots-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                gap: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .screenshots-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            .testimonial-screenshots-section {
+                margin-top: 3rem;
+                padding-top: 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .screenshots-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 0.75rem;
+            }
+
+            .screenshot-item {
+                border-radius: var(--radius-sm);
+            }
+        }
+
         /* FINAL CTA SECTION */
         .final-cta-section {
             padding: 4rem 2rem;
@@ -821,8 +896,10 @@
                 </div>
             </div>
 
-            <div class="results-grid">
-                {{media.testimonials}}
+            <div class="testimonial-screenshots-section">
+                <div class="screenshots-gallery" id="testimonials-gallery">
+                    <!-- Screenshots will be loaded here -->
+                </div>
             </div>
         </div>
     </section>
@@ -837,6 +914,31 @@
             js.src = "https://vidalytics.com/embed/{{media.heroVideo.embedId}}";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'vidalytics-js'));
+    </script>
+
+    <!-- Load Testimonial Screenshots -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery = document.getElementById('testimonials-gallery');
+            const totalScreenshots = 92;
+
+            for (let i = 1; i <= totalScreenshots; i++) {
+                const screenshotNum = String(i).padStart(3, '0');
+                const imagePath = `assets/testimonials/testimonial-${screenshotNum}.png`;
+
+                const screenshotItem = document.createElement('div');
+                screenshotItem.className = 'screenshot-item';
+                screenshotItem.style.animationDelay = `${i * 0.02}s`;
+
+                const img = document.createElement('img');
+                img.src = imagePath;
+                img.alt = `Student Testimonial ${i}`;
+                img.loading = 'lazy';
+
+                screenshotItem.appendChild(img);
+                gallery.appendChild(screenshotItem);
+            }
+        });
     </script>
 
     <!-- Analytics and Tracking -->
