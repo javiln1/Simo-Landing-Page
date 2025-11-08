@@ -128,6 +128,13 @@
           border: 0 !important;
         }
 
+        /* Hero video top container - beneath headline */
+        .hero-video-top-container {
+            margin: 2.5rem 0 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
         /* Mobile responsive adjustments */
         @media (max-width: 768px){
           .hero-section {
@@ -687,15 +694,16 @@
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="hero-title">{{content.heroTitle}}</h1>
-            <h2 class="hero-subtitle">{{content.heroSubtitle}}</h2>
-            <p class="hero-description">{{content.heroDescription}}</p>
-            
-            <div class="hero-video-container">
+
+            <div class="hero-video-top-container">
                 <div class="hero-video">
                     <div id="vidalytics_embed_{{media.heroVideo.embedId}}"></div>
                 </div>
             </div>
-            
+
+            <h2 class="hero-subtitle">{{content.heroSubtitle}}</h2>
+            <p class="hero-description">{{content.heroDescription}}</p>
+
             <div class="hero-cta">
                 <a href="{{content.ctaButtonUrl}}" class="cta-button">{{content.ctaButtonText}}</a>
             </div>
