@@ -543,31 +543,94 @@
             margin-bottom: 3rem;
         }
 
+        /* Outer wrapper - spotlight effect */
+        .youtube-outer-wrapper {
+            padding: 3rem 2rem;
+            background: linear-gradient(180deg, rgba(139, 69, 19, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+            border-radius: var(--radius-lg);
+            margin-bottom: 4rem;
+        }
+
         .youtube-embed-container {
             position: relative;
-            margin-bottom: 3rem;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
             border-radius: var(--radius-lg);
             overflow: hidden;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 2px solid rgba(139, 69, 19, 0.3);
+            /* Gradient border effect */
+            border: 2px solid;
+            border-image: linear-gradient(135deg, rgba(139, 69, 19, 0.5), rgba(139, 69, 19, 0.2)) 1;
             box-shadow:
+                inset 0 0 0 1px rgba(139, 69, 19, 0.3),
                 0 20px 60px rgba(0, 0, 0, 0.5),
                 0 0 0 1px rgba(139, 69, 19, 0.1),
-                0 0 80px rgba(139, 69, 19, 0.15);
+                0 0 100px rgba(139, 69, 19, 0.2);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .youtube-embed-container:hover {
             transform: translateY(-5px);
             box-shadow:
+                inset 0 0 0 1px rgba(139, 69, 19, 0.4),
                 0 30px 80px rgba(0, 0, 0, 0.6),
                 0 0 0 1px rgba(139, 69, 19, 0.2),
-                0 0 120px rgba(139, 69, 19, 0.25);
+                0 0 150px rgba(139, 69, 19, 0.3);
+        }
+
+        /* Gradient overlay on video */
+        .youtube-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+            pointer-events: none;
+            z-index: 2;
+            border-radius: var(--radius-lg);
+        }
+
+        /* Play button badge */
+        .youtube-play-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 3;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+            color: #8B4513;
+            cursor: pointer;
+        }
+
+        .youtube-embed-container:hover .youtube-play-badge {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .youtube-play-badge svg {
+            transition: all 0.3s ease;
+        }
+
+        .youtube-play-badge:hover svg {
+            transform: scale(1.2);
+        }
+
+        .youtube-play-badge span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            opacity: 0.8;
         }
 
         .youtube-embed-container iframe {
@@ -575,11 +638,18 @@
             width: 100%;
             aspect-ratio: 16 / 9;
             border: none;
+            position: relative;
+            z-index: 1;
         }
 
         @media (max-width: 768px) {
-            .youtube-embed-container {
-                margin-bottom: 2rem;
+            .youtube-outer-wrapper {
+                padding: 2rem 1rem;
+                margin-bottom: 3rem;
+            }
+
+            .youtube-embed-container:hover .youtube-play-badge {
+                transform: translate(-50%, -50%) scale(1.05);
             }
         }
 
@@ -770,16 +840,26 @@
         <div class="testimonials-content">
             <h2 class="testimonials-title">Success Stories</h2>
 
-            <div class="youtube-embed-container">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/Y4rk8YS2fr0"
-                    title="Student Success Stories"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+            <div class="youtube-outer-wrapper">
+                <div class="youtube-embed-container">
+                    <div class="youtube-overlay"></div>
+                    <div class="youtube-play-badge">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <polygon points="24,18 24,42 42,30" fill="currentColor"/>
+                        </svg>
+                        <span>Watch Student Results</span>
+                    </div>
+                    <iframe
+                        width="100%"
+                        height="500"
+                        src="https://www.youtube.com/embed/Y4rk8YS2fr0"
+                        title="Student Success Stories"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
             <div class="results-grid">
