@@ -543,6 +543,42 @@
             margin-bottom: 3rem;
         }
 
+        .youtube-link-container {
+            text-align: center;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .youtube-link-text {
+            font-size: 1rem;
+            color: #EDE8E1;
+            opacity: 0.85;
+        }
+
+        .youtube-link-button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            background-color: rgba(139, 69, 19, 0.15);
+            color: #8B4513;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            border: 2px solid #8B4513;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .youtube-link-button:hover {
+            background-color: #8B4513;
+            color: #F2EEE6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.25);
+        }
+
         .testimonial-picture-card {
             background-color: #F2EEE6;
             border-radius: 15px;
@@ -729,6 +765,12 @@
     <section id="testimonials" class="results student-testimonials-section">
         <div class="testimonials-content">
             <h2 class="testimonials-title">Success Stories</h2>
+
+            <div class="youtube-link-container">
+                <p class="youtube-link-text">Watch real student results:</p>
+                <a href="https://www.youtube.com/watch?v=Y4rk8YS2fr0" target="_blank" rel="noopener noreferrer" class="youtube-link-button">View on YouTube</a>
+            </div>
+
             <div class="results-grid">
                 
                 <div class="testimonial-picture-card">
