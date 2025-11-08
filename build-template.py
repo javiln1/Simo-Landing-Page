@@ -193,12 +193,19 @@ class FunnelTemplateBuilder:
             print(f"❌ Error processing {template_file}: {e}")
 
     def copy_assets(self):
-        """Copy assets to output directory"""
+        """Copy assets to output directory, including subdirectories"""
         if self.assets_dir.exists():
             for item in self.assets_dir.iterdir():
                 if item.is_file():
                     shutil.copy2(item, self.output_assets_dir)
                     print(f"📄 Copied asset: {item.name}")
+                elif item.is_dir():
+                    # Recursively copy subdirectories (e.g., testimonials/)
+                    dest_dir = self.output_assets_dir / item.name
+                    if dest_dir.exists():
+                        shutil.rmtree(dest_dir)
+                    shutil.copytree(item, dest_dir)
+                    print(f"📁 Copied asset folder: {item.name}")
         else:
             print("⚠️  No assets directory found - creating placeholder assets")
             # Create placeholder assets
@@ -212,7 +219,7 @@ class FunnelTemplateBuilder:
                 'testimonial-4.jpg',
                 'og-image.jpg'
             ]
-            
+
             for filename in placeholder_files:
                 placeholder_path = self.output_assets_dir / filename
                 with open(placeholder_path, 'w') as f:
