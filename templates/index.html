@@ -543,40 +543,31 @@
             margin-bottom: 3rem;
         }
 
-        .youtube-link-container {
-            text-align: center;
+        .youtube-embed-container {
             margin-bottom: 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(139, 69, 19, 0.15);
         }
 
-        .youtube-link-text {
-            font-size: 1rem;
-            color: {{branding.textColor}};
-            opacity: 0.85;
+        .youtube-embed-container iframe {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
         }
 
-        .youtube-link-button {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            font-size: 0.95rem;
-            font-weight: 600;
-            background-color: rgba(139, 69, 19, 0.15);
-            color: {{branding.accentColor}};
-            text-decoration: none;
-            border-radius: var(--radius-md);
-            border: 2px solid {{branding.accentColor}};
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+        @media (max-width: 768px) {
+            .youtube-embed-container {
+                margin-bottom: 2rem;
+            }
 
-        .youtube-link-button:hover {
-            background-color: {{branding.accentColor}};
-            color: {{branding.secondaryColor}};
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.25);
+            .youtube-embed-container iframe {
+                height: auto;
+            }
         }
 
         .testimonial-picture-card {
@@ -766,9 +757,16 @@
         <div class="testimonials-content">
             <h2 class="testimonials-title">Success Stories</h2>
 
-            <div class="youtube-link-container">
-                <p class="youtube-link-text">Watch real student results:</p>
-                <a href="https://www.youtube.com/watch?v=Y4rk8YS2fr0" target="_blank" rel="noopener noreferrer" class="youtube-link-button">View on YouTube</a>
+            <div class="youtube-embed-container">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/Y4rk8YS2fr0"
+                    title="Student Success Stories"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
 
             <div class="results-grid">
