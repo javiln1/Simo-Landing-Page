@@ -876,7 +876,7 @@
 
             <div class="hero-cta">
                 <a href="#application-form" class="cta-button">Apply Now - Limited Spots</a>
-                <a href="javascript:void(0)" data-iclosed-popup="Simo/ecom-with-simo-strategy-session" class="cta-button calendar-button">Book a Call</a>
+                <button onclick="openIClosedPopup()" class="cta-button calendar-button">Book a Call</button>
             </div>
         </div>
     </section>
@@ -931,6 +931,18 @@
     <!-- iClosed popup widget begin -->
     <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
     <!-- iClosed popup widget end -->
+
+    <!-- iClosed Popup Function -->
+    <script>
+        function openIClosedPopup() {
+            if (window.iClosedWidget) {
+                window.iClosedWidget.openPopup('Simo/ecom-with-simo-strategy-session');
+            } else {
+                // Fallback: open in a new window if widget not loaded
+                window.open('https://app.iclosed.io/e/Simo/ecom-with-simo-strategy-session', 'iClosed', 'width=900,height=700');
+            }
+        }
+    </script>
 
     <!-- Vidalytics Video Script -->
     <script>
