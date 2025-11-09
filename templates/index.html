@@ -610,12 +610,33 @@
 
         @media (max-width: 768px) {
             .youtube-outer-wrapper {
-                padding: 2rem 1rem;
-                margin-bottom: 3rem;
+                padding: 1.5rem 1rem;
+                margin-bottom: 2.5rem;
+            }
+
+            .youtube-embed-container {
+                max-width: 100%;
             }
 
             .youtube-embed-container:hover .youtube-play-badge {
                 transform: translate(-50%, -50%) scale(1.05);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .youtube-outer-wrapper {
+                padding: 1rem 0.75rem;
+                margin-bottom: 2rem;
+                background: transparent;
+            }
+
+            .youtube-embed-container {
+                border-radius: var(--radius-md);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            .youtube-embed-container iframe {
+                min-height: 250px;
             }
         }
 
