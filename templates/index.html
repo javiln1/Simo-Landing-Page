@@ -239,8 +239,83 @@
             }
         }
 
+        /* STICKY HEADER NAVIGATION */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+            z-index: 999;
+            padding: 1rem 2rem;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .sticky-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .sticky-header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .sticky-logo {
+            max-width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .sticky-brand {
+            font-family: 'Merriweather', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: {{branding.textColor}};
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .sticky-brand span {
+            color: {{branding.accentColor}};
+        }
+
+        .sticky-cta {
+            background: {{branding.accentColor}};
+            color: {{branding.buttonTextColor}};
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid {{branding.accentColor}};
+            cursor: pointer;
+        }
+
+        .sticky-cta:hover {
+            background: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(139, 69, 19, 0.3);
+        }
+
         /* HERO SECTION */
         .hero-section {
+            scroll-margin-top: 100px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -905,6 +980,16 @@
     </style>
 </head>
 <body>
+    <!-- STICKY HEADER -->
+    <header class="sticky-header">
+        <div class="sticky-header-content">
+            <a href="#" class="sticky-brand">
+                <img src="{{media.logo}}" alt="Logo" class="sticky-logo">
+            </a>
+            <a href="#application-form" class="sticky-cta">Book Now</a>
+        </div>
+    </header>
+
     <!-- HERO SECTION -->
     <section class="hero-section">
         <div class="hero-logo">
