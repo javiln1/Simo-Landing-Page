@@ -596,12 +596,36 @@
             margin-bottom: 3rem;
         }
 
+        /* YouTube Card Container */
+        .youtube-card-wrapper {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: {{branding.secondaryColor}};
+            border-radius: var(--radius-lg);
+            border: 2px solid transparent;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .youtube-card-wrapper:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            border-color: {{branding.accentColor}};
+        }
+
+        .youtube-card-content {
+            width: 100%;
+        }
+
         /* Outer wrapper - spotlight effect */
         .youtube-outer-wrapper {
-            padding: 3rem 2rem;
-            background: linear-gradient(180deg, rgba(139, 69, 19, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+            padding: 0;
+            background: transparent;
             border-radius: var(--radius-lg);
-            margin-bottom: 4rem;
+            margin-bottom: 0;
         }
 
         .youtube-embed-container {
@@ -662,9 +686,13 @@
         }
 
         @media (max-width: 768px) {
-            .youtube-outer-wrapper {
+            .youtube-card-wrapper {
                 padding: 1.5rem 1rem;
-                margin-bottom: 2.5rem;
+            }
+
+            .youtube-outer-wrapper {
+                padding: 0;
+                margin-bottom: 0;
             }
 
             .youtube-embed-container {
@@ -677,9 +705,14 @@
         }
 
         @media (max-width: 640px) {
+            .youtube-card-wrapper {
+                padding: 1rem;
+                margin-bottom: 3rem;
+            }
+
             .youtube-outer-wrapper {
-                padding: 1.5rem 1rem;
-                margin-bottom: 2rem;
+                padding: 0;
+                margin-bottom: 0;
                 background: transparent;
             }
 
@@ -962,18 +995,22 @@
         <div class="testimonials-content">
             <h2 class="testimonials-title">Success Stories</h2>
 
-            <div class="youtube-outer-wrapper">
-                <div class="youtube-embed-container">
-                    <div class="youtube-overlay"></div>
-                    <iframe
-                        width="100%"
-                        height="500"
-                        src="https://www.youtube.com/embed/Y4rk8YS2fr0"
-                        title="Student Success Stories"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
+            <div class="youtube-card-wrapper">
+                <div class="youtube-card-content">
+                    <div class="youtube-outer-wrapper">
+                        <div class="youtube-embed-container">
+                            <div class="youtube-overlay"></div>
+                            <iframe
+                                width="100%"
+                                height="500"
+                                src="https://www.youtube.com/embed/Y4rk8YS2fr0"
+                                title="Student Success Stories"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
 
