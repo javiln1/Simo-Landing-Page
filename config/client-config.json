@@ -9,10 +9,10 @@
   "branding": {
     "primaryColor": "#000000",
     "secondaryColor": "#F2EEE6",
-    "accentColor": "#8B4513",
+    "accentColor": "#00B34D",
     "textColor": "#EDE8E1",
     "backgroundColor": "#000000",
-    "buttonColor": "#8B4513",
+    "buttonColor": "#00B34D",
     "buttonTextColor": "#FFFFFF"
   },
   "content": {
