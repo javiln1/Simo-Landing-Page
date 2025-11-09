@@ -289,14 +289,6 @@
 
         .hero-cta {
             margin-top: 2rem;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        [data-iclosed-embed] {
-            width: 100%;
-            max-width: 600px;
         }
 
         .cta-button {
@@ -884,7 +876,8 @@
 
             <div class="hero-cta">
                 <!-- iClosed inline widget begin -->
-                <div data-iclosed-embed="Simo/ecom-with-simo-strategy-session"></div>
+                <div class="iclosed-widget" data-url="https://app.iclosed.io/e/Simo/ecom-with-simo-strategy-session" title="Ecom With SImo - Strategy Session " style="width: 100%; height: 620px"></div>
+                <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
                 <!-- iClosed inline widget end -->
             </div>
         </div>
@@ -937,15 +930,6 @@
     </section>
 
 
-    <!-- iClosed inline widget begin -->
-    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js"></script>
-    <script>
-        // Initialize iClosed widget after it loads
-        if (window.iClosedEmbed) {
-            window.iClosedEmbed.init();
-        }
-    </script>
-    <!-- iClosed inline widget end -->
 
     <!-- Vidalytics Video Script -->
     <script>
