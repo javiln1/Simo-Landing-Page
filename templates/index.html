@@ -307,6 +307,26 @@
 
         .hero-cta {
             margin-top: 2rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .iclosed-widget {
+            border-radius: var(--radius-lg);
+        }
+
+        @media (min-width: 1024px) {
+            .iclosed-widget {
+                width: 100% !important;
+                height: 400px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .iclosed-widget {
+                width: 100% !important;
+                height: 620px !important;
+            }
         }
 
         .cta-button {
