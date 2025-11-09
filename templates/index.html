@@ -1045,9 +1045,6 @@
     </section>
 
 
-    <!-- iClosed Calendar Widget Script -->
-    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
-
     <!-- Calendar Popup Functionality -->
     <script>
         function openCalendarPopup() {
@@ -1058,6 +1055,16 @@
                 'width=900,height=700,resizable=yes,scrollbars=yes'
             );
         }
+
+        // Initialize iClosed widget when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load the iClosed widget script
+            const script = document.createElement('script');
+            script.src = 'https://app.iclosed.io/assets/widget.js';
+            script.type = 'text/javascript';
+            script.async = true;
+            document.body.appendChild(script);
+        });
     </script>
 
     <!-- Vidalytics Video Script -->
