@@ -929,17 +929,22 @@
 
 
     <!-- iClosed popup widget begin -->
-    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async></script>
+    <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js"></script>
     <!-- iClosed popup widget end -->
 
     <!-- iClosed Popup Function -->
     <script>
         function openIClosedPopup() {
+            // Wait for iClosed widget to load if needed
             if (window.iClosedWidget) {
                 window.iClosedWidget.openPopup('Simo/ecom-with-simo-strategy-session');
             } else {
-                // Fallback: open in a new window if widget not loaded
-                window.open('https://app.iclosed.io/e/Simo/ecom-with-simo-strategy-session', 'iClosed', 'width=900,height=700');
+                // Try again after a brief delay if not loaded
+                setTimeout(function() {
+                    if (window.iClosedWidget) {
+                        window.iClosedWidget.openPopup('Simo/ecom-with-simo-strategy-session');
+                    }
+                }, 100);
             }
         }
     </script>
