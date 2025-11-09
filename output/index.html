@@ -32,8 +32,9 @@
             --bg: #000000;
             --button: #8B4513;
             --button-text: #FFFFFF;
-            --accent-glow: rgba(139, 69, 19, 0.15);
-            --accent-light: rgba(139, 69, 19, 0.05);
+            --accent-glow: rgba(139, 69, 19, 0.3);
+            --accent-light: rgba(139, 69, 19, 0.08);
+            --accent-ultra-light: rgba(139, 69, 19, 0.03);
             --spacing-xs: 0.5rem;
             --spacing-sm: 1rem;
             --spacing-md: 1.5rem;
@@ -312,8 +313,23 @@
             display: flex;
             flex-direction: column;
             padding: 2rem 1rem;
-            background-color: #000000;
+            background:
+                radial-gradient(circle at 20% 30%, var(--accent-glow) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, var(--accent-ultra-light) 0%, transparent 50%),
+                linear-gradient(135deg, var(--bg) 0%, var(--bg) 100%);
             position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle, var(--accent-light) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.08;
+            pointer-events: none;
         }
 
         .hero-content {
@@ -364,6 +380,23 @@
 
         .hero-video-container {
             margin: 2rem 0;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 2px solid var(--accent-light);
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 80px var(--accent-glow);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hero-video-container:hover {
+            transform: translateY(-5px);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.6),
+                0 0 120px var(--accent-glow);
         }
 
         .hero-cta {
@@ -377,6 +410,21 @@
 
         .iclosed-widget {
             border-radius: var(--radius-lg);
+            background: rgba(26, 26, 26, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 2px solid var(--accent-light);
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 80px var(--accent-glow);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .iclosed-widget:hover {
+            transform: translateY(-5px);
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.6),
+                0 0 120px var(--accent-glow);
         }
 
         .iclosed-booking-section {
