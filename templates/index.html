@@ -712,7 +712,7 @@
 
         .screenshots-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
             width: 100%;
         }
@@ -750,14 +750,14 @@
 
         @media (max-width: 1024px) {
             .screenshots-gallery {
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                grid-template-columns: repeat(3, 1fr);
                 gap: 1.2rem;
             }
         }
 
         @media (max-width: 768px) {
             .screenshots-gallery {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: 1fr;
                 gap: 1rem;
             }
 
@@ -769,7 +769,7 @@
 
         @media (max-width: 640px) {
             .screenshots-gallery {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                grid-template-columns: 1fr;
                 gap: 0.75rem;
             }
 
