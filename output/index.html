@@ -243,29 +243,35 @@
         .hero-section {
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
             padding: 2rem 1rem;
             background-color: #000000;
             position: relative;
+        }
+
+        .hero-logo {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            z-index: 10;
+        }
+
+        .logo-img {
+            max-width: 120px;
+            height: auto;
+            object-fit: contain;
         }
 
         .hero-content {
             max-width: 800px;
             text-align: center;
             z-index: 2;
-        }
-
-        .hero-logo {
-            margin-bottom: 2rem;
+            flex: 1;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-        }
-
-        .logo-img {
-            max-width: 150px;
-            height: auto;
-            object-fit: contain;
+            align-items: center;
+            margin: 0 auto;
         }
 
         .hero-title {
@@ -877,10 +883,10 @@
 <body>
     <!-- HERO SECTION -->
     <section class="hero-section">
+        <div class="hero-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo-img">
+        </div>
         <div class="hero-content">
-            <div class="hero-logo">
-                <img src="assets/logo.png" alt="Logo" class="logo-img">
-            </div>
             <h1 class="hero-title">THE ONLY DROPSHIPPING PROGRAM WHERE I WORK WITH YOU EVERY SINGLE DAY FOR 12 MONTHS</h1>
 
             <div class="hero-video-top-container">
