@@ -351,6 +351,16 @@
             }
         }
 
+        .hero-presents {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-weight: 600;
+            color: {{branding.accentColor}};
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
         .hero-title {
             font-family: 'Merriweather', serif;
             font-size: clamp(2rem, 6vw, 3.5rem);
@@ -1021,6 +1031,7 @@
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero-section">
         <div class="hero-content">
+            <div class="hero-presents">{{content.heroPresents}}</div>
             <h1 class="hero-title">{{content.heroTitle}}</h1>
 
             <div class="hero-video-top-container">

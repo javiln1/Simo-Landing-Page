@@ -55,6 +55,7 @@ class FunnelTemplateBuilder:
 
         # Replace content
         content_config = self.config['content']
+        processed_content = processed_content.replace('{{content.heroPresents}}', content_config.get('heroPresents', ''))
         processed_content = processed_content.replace('{{content.heroTitle}}', content_config['heroTitle'])
         processed_content = processed_content.replace('{{content.heroSubtitle}}', content_config['heroSubtitle'])
         processed_content = processed_content.replace('{{content.heroDescription}}', content_config['heroDescription'])
